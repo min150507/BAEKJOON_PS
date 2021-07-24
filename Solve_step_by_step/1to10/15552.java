@@ -79,11 +79,22 @@ public class Pro_2557 {
 			 * 그리고 bw.write에는 System.out.println();과 같이 자동개행기능이 없기때문에 개행을 해주어야할 경우에는 \n를 통해 따로 처리해주어야 하는점 잊지말자.
 			 * 
 			 *  주요 Method
-			 *  메서드명										기능
+			 *  메서드명						기능
 			 *  BufferedReader(Reader rd)				rd에 연결되는 문자입력 버퍼스트림 생성
 			 *  BufferedWriter(Writer wt)				wt에 연결되는 문자출력 버퍼스트림 생성
-			 *  int read()										스트림으로부터 한 문자를 읽어서 int 형으로 리턴
-			 *  
+			 *  int read()						스트림으로부터 한 문자를 읽어서 int 형으로 리턴
+			 *  int read(char[] buf)				문자배열 buf의 크기만큼 문자를 읽어드림. 읽어드린 문자 수를 리턴 
+			 *  int read(char[] buf, int offset, int length) 	buf의 offset위치에서부터 length 길이만큼 문자를 스트림으로부터 읽어들임
+			 *  String readLine()					스트림으로부터 한 줄을 읽어 문자열로 리턴
+			 *  void mark()						현재위치를 마킹, 차후 reset()을 이용하여 마킹워치부터 시작함
+			 *  void reset()					마킹이 있으며 그 위치에서부터 다시 시작, 그렇지 않으면 처음부터 다시 시작
+			 *  long skip(int n)					n개의 문자를 건너 뜀
+			 *  void close()					스트림 닫음
+			 *  void write(int c)					int 형으로 문자 데이터를 출력문자스트림으로 출력
+			 *  void write(String s, int offset, int length)	문자열 s를 offset 위치부터 length 길이만큼을 출력스트림으로 출력
+			 *  void write(char[] buf, int offset, int length)  	문자배열 buf 의 offset 위치부터 length 길이만큼을 출력스트림으로 출력
+			 *  void newLine()					줄바꿈 문자열 출력
+			 *  void flush()					남아있는 데이터를 모두 출력시
 			 * */
 	            
 		}
